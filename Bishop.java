@@ -29,9 +29,6 @@ public class Bishop extends Piece {
         super(row, col, type);
     }
     
-    
-    
-    
 //    Functions
 //    ===================================================================
     @Override
