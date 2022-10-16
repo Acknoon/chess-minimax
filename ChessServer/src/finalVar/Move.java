@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ver4;
-
-import java.util.ArrayList;
+package finalVar;
 
 /**
  *
@@ -16,7 +14,7 @@ class Move {
     private Piece piece;
     private Piece capturedPiece;
     private Square destinationSquare;
-    private ArrayList<Move> allPossibleMoves;
+    private boolean promote = false;
     private int score;
     private int depth;
 
@@ -58,6 +56,13 @@ class Move {
         this.depth = depth;
     }
 
+    public void promote(boolean bool){
+        promote = bool;
+    }
+    public boolean hasPromoted(){
+        return promote;
+    }
+    
     public int getDepth() {
         return depth;
     }
@@ -65,8 +70,6 @@ class Move {
     public void setDepth(int depth) {
         this.depth = depth;
     }
-    
-    
     
     public Piece getPiece() {
         return piece;
@@ -99,18 +102,10 @@ class Move {
     public void setCapturedPiece(Piece capturedPiece) {
         this.capturedPiece = capturedPiece;
     }
-
-    public ArrayList<Move> getPossibleMoves() {
-        return allPossibleMoves;
-    }
-
-    public void setPossibleMoves(ArrayList<Move> allPossibleMoves) {
-        this.allPossibleMoves = allPossibleMoves;
-    }
     
     @Override
     public String toString(){
-        return this.piece.getStringPiece()+"("+ this.piece.getStringCoordinates() + ")"
-                + "--->  " + this.destinationSquare.toString() + "      The Score ==>"+ this.score  +"\n";
+        return "("+ this.piece.getStringCoordinates() + ")"
+                + "--->  " + this.destinationSquare.toString() +"\n";
     }
 }

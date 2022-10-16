@@ -1,27 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package ver4;
+package finalVar;
+
+import java.io.Serializable;
 
 /**
- *The Main Class that holds 6 type of Pieces in chess game
+ * 
  * @author Ariel
  */
-public class Square {
+public class Square implements Serializable{
 
-//        The default attributes If I were to use The matrix with Char
-//    ================================================
-    public static final int FIRST_ROW = 7;
-    public static final int SECOND_ROW = 6;
-    public static final int LAST_ROW = 0;
-    public static final int SEVENTH_ROW = 1;
 
 //    Global veriables 
 //    ================================================
-    protected int indexRow;
-    protected int indexCol;
+    protected int row;
+    protected int col;
 
     /**
      * Constructor that has been used by all 6 types of pieces in chess board
@@ -29,8 +20,16 @@ public class Square {
      * @param indexCol The coordinates of the colum
      */
     public Square(int indexRow, int indexCol) {
-        this.indexRow = indexRow;
-        this.indexCol = indexCol;
+        this.row = indexRow;
+        this.col = indexCol;
+    }
+
+    /**
+     * Constructor that has been used by all 6 types of pieces in chess board
+     * @param otherSquare The other square
+     */
+    public Square(Square otherSquare) {
+        this(otherSquare.getRow(), otherSquare.getCol());
     }
     
     /**
@@ -39,7 +38,7 @@ public class Square {
      * @return returns true if the it is selected
      */
     public boolean equals(Square otherSquare){
-        return this.indexRow == otherSquare.getRow() && this.indexCol == otherSquare.getCol();
+        return this.row == otherSquare.getRow() && this.col == otherSquare.getCol();
     }
     
     
@@ -48,7 +47,7 @@ public class Square {
      * @return the index row
      */
     public int getRow() {
-        return indexRow;
+        return row;
     }
 
     /**
@@ -56,7 +55,7 @@ public class Square {
      * @return the index of colum
      */
     public int getCol() {
-        return indexCol;
+        return col;
     }
 
     /**
@@ -64,7 +63,7 @@ public class Square {
      * @param indexRow the new value of the index
      */
     public void setRow(int indexRow) {
-        this.indexRow = indexRow;
+        this.row = indexRow;
     }
 
     /**
@@ -72,20 +71,17 @@ public class Square {
      * @param indexCol the new value of index
      */
     public void setCol(int indexCol) {
-        this.indexCol = indexCol;
+        this.col = indexCol;
     }
-    
-    
-   
     
     @Override
     public String toString() {
-        return "["+ indexRow + " " + indexCol+"]";
+        return "["+ row + " " + col+"]";
     }
 
     public void setSquare(Square s) {
-        this.indexRow = s.getRow();
-        this.indexCol = s.getCol();
+        this.row = s.getRow();
+        this.col = s.getCol();
     }
     
     

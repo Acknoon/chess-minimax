@@ -3,22 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ver4;
+package finalVar;
 
 /**
  *
  * @author Ariel
  */
 public class SquareException extends Exception{
-
-//    private final Type currentSquare;
-    
-    public SquareException(/*Type square*/) {
-//        this.currentSquare = square;
-    }
-    
-//    public Type getTypeSquare(){
-//        return currentSquare;
-//    }
-
+    public SquareException() {}
 }
