@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="ChessServerGroup">
+            <file>file:/C:/Users/Ariel/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/Square.java</file>
+            <file>file:/C:/Users/Ariel/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/Message.java</file>
+            <file>file:/C:/Users/Ariel/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/Const.java</file>
+            <file>file:/C:/Users/Ariel/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/ClientData.java</file>
+            <file>file:/C:/Users/Ariel/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/Utils.java</file>
+        </group>
+        <group>
+            <file>file:/C:/Users/Arik/Google%20Drive/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/DB.java</file>
+            <file>file:/C:/Users/Arik/Google%20Drive/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/Model.java</file>
+            <file>file:/C:/Users/Arik/Google%20Drive/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/ServerChess.java</file>
+            <file>file:/C:/Users/Arik/Google%20Drive/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/Piece.java</file>
+            <file>file:/C:/Users/Arik/Google%20Drive/Documents/NetBeansProjects/ChessNetwork/ChessServer/src/finalVar/Bishop.java</file>
+        </group>
+    </open-files>
+</project-private>
